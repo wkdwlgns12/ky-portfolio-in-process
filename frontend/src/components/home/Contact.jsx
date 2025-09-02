@@ -2,7 +2,12 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className='inner contact-inner'>
+      <h1 className='tit'>
+        <span className='star-spin'><i className='star'>*</i></span>
+      </h1>
+      Contact
+    </div>
   )
 }
 
