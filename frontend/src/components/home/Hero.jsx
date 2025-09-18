@@ -20,7 +20,7 @@ const Hero = () => {
         웹 표준을 준수하여 차별이 없는 웹을 지향합니다. <br />
         node express - react를 활용한 MERN 프로젝트를 지향하며, <br />
         풀스택 전문가로써 성장과 도전을 지향합니다.
-    
+
       </p>
       <div className="arrow">
         ⬇

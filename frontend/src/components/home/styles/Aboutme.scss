@@ -3,10 +3,10 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh !important;
-    
-        @media screen and (max-width:1200px) {
-            height: auto !important;
-        }
+
+    @media screen and (max-width:1200px){
+        height: auto !important; 
+    }
 
     h1.tit {
         align-self: flex-end;
@@ -18,10 +18,12 @@
             align-self: flex-start;
         }
 
+
         .star-spin {
             position: absolute;
             left: -10rem;
             top: -10rem;
+
         }
     }
 
@@ -62,10 +64,8 @@
                         background-color: var(--primary);
                         color: var(--bg);
                     }
-
                 }
             }
         }
-
     }
 }

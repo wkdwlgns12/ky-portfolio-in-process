@@ -6,7 +6,7 @@ import FixedTop from './FixedTop'
 const Header = () => {
   const { theme, toggleTheme } = useTheme()
   const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen]=useState(false)
+  const [menuOpen, setmenuOpen]=useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,24 +18,24 @@ const Header = () => {
     }
     handleScroll()
 
-    window.addEventListener('scroll',handleScroll)
+    window.addEventListener('scroll', handleScroll)
 
   }, [])
 
   useEffect(()=>{
-    const onKey =(e)=> e.key=='Escape' && setMenuOpen(false)
+    const onkey =(e)=>e.key=='Excape' && setmenuOpen(false)
 
-    document.addEventListener('keydown',onKey)
-    return ()=>document.removeEventListener('keydown',onKey)
+    document,addEventListener('keydown',onkey)
+    return()=>document.removeEventListener('keydown',onkey)
   },[])
 
   return (
-    <header className={`${scrolled? "scroll":"" } ${menuOpen? "is-open":""} ` }>
+    <header className={`${scrolled ? "scroll" : ""}  ${menuOpen? "is-open" : ""}` }>
       <div className="inner">
         <h4>LOGO</h4>
         <div className="right-wrap">
           <button 
-          onClick={()=>setMenuOpen(v=>!v)}
+          onClick={()=>setmenuOpen(v=>!v)}
           className='mob-nav-btn'>
             <span>1</span>
             <span>2</span>
@@ -46,7 +46,7 @@ const Header = () => {
 
         </div>
       </div>
-      <FixedTop/>
+      <FixedTop />
     </header>
   )
 }

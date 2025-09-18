@@ -10,24 +10,22 @@ section {
         height: auto;
     }
 
-    &#Contact {
+    &#Contact{
         height: 100vh;
 
-        @media screen and (max-width:1200px) {
+        @media screen and (max-width:1200px){
             height: auto;
             min-height: auto;
-            padding: clamp(10rem, 15vw, 20rem) 0;
+            padding: 20rem 0;
         }
     }
-
-    &#Aboutme {
-        @media screen and (max-width:1200px) {
+    &#Aboutme{
+        @media screen and (amx-width:1200px){
             height: auto;
             min-height: auto;
-            padding: clamp(10rem, 15vw, 20rem) 0;
+            padding: 20rem 0;
         }
     }
-
 }
 
 header,
@@ -40,13 +38,13 @@ section {
 
         margin: auto;
 
-        @media screen and (max-width:1599px) {
-            padding: 1rem 2rem;
+        @media screen and (max-width:1599px){
+            padding: 1 2rem;
         }
 
         .btn {
             background-color: var(--primary);
-            color: var(--neutral-900);
+            color: var(--bg);
             border: 0;
             padding: .6rem 1rem;
             cursor: pointer;
@@ -79,18 +77,17 @@ section {
         h2.sub-tit {
             font-size: 7rem;
             font-weight: 800;
-            // text-transform: uppercase;
         }
 
         h4.list-lst {
             font-size: 2rem;
             font-weight: 700;
-            border-bottom: .1rem solid var(--gray300);
+            border-bottom: .1rem solid var(--gray600);
             line-height: 2;
         }
 
         h3.sub-tit-2 {
-            font-family: " Noto Sans KR";
+            font-family: "Note Sans KR";
             text-transform: uppercase;
             line-height: 1;
             letter-spacing: 1.9rem;
@@ -109,20 +106,17 @@ section {
             font-weight: 200;
             margin: 1rem 0;
             letter-spacing: -0.02rem;
-
         }
-
-        .tags {
+        .tags{
             display: flex;
             gap: 0.8rem;
             flex-wrap: wrap;
-
-            span {
+            span{
                 display: block;
                 padding: .5rem 1.6rem;
-                background-color: var(--gray200);
+                background-color: var(--gray100);
                 border-radius: 10rem;
-                color: var(--gray800);
+                color: var(--gray900);
             }
         }
     }
